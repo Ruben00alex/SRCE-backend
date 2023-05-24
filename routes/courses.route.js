@@ -8,13 +8,18 @@ const {
 const {
   bdSaveClass,
   buscarDocente,
+  bdGetUserCourses,
+  bdGetTree,
+  getTareasCurso,
 } = require(".././controllers/bd.controller");
 
 router.post("/", getCourses);
-
 router.post("/coursework", getCourseWork);
 router.post("/bdSaveClass", bdSaveClass);
 router.post("/buscarDocente", buscarDocente);
+router.post("/bdGetTree", bdGetTree);
+router.post("/bdGetUserCourses", bdGetUserCourses);
+router.post("/getTareasCurso", getTareasCurso);
 
 // router.post('/course-work/students',);
 //
